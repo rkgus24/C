@@ -1,0 +1,33 @@
+﻿﻿
+/* 변수 : 변하는 수, 저장의 용도로 씀(변수 안에 담을 것을 사용자가 정함)
+
+상수 : 변하지 않는 수
+*/
+
+//ex) int a;
+
+
+//char a = 127; 1byte character == 문자
+
+//short b; 2byte 작은 정수형
+
+//int c; 4byte int를 기준으로
+
+//long d; 4byte or 8byte 큰 정수형
+
+
+//#include <stdio.h>가 있어야 printf를 사용할 수 있다
+
+
+//컴퓨터는
+
+//0, 1 → 2진수 0(0) 1(1) 01(2) 11(3) 100(4)
+
+//on, off
+
+#include <stdio.h>
+int main() {
+	printf("Hello World!");
+
+	return 0;
+}
