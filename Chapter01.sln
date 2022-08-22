@@ -1,31 +1,29 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.1.32210.238
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chapter01", "Chapter01\Chapter01.vcxproj", "{E965881F-4419-4E4B-9A26-8BB50D8DFF02}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E965881F-4419-4E4B-9A26-8BB50D8DFF02}.Debug|x64.ActiveCfg = Debug|x64
-		{E965881F-4419-4E4B-9A26-8BB50D8DFF02}.Debug|x64.Build.0 = Debug|x64
-		{E965881F-4419-4E4B-9A26-8BB50D8DFF02}.Debug|x86.ActiveCfg = Debug|Win32
-		{E965881F-4419-4E4B-9A26-8BB50D8DFF02}.Debug|x86.Build.0 = Debug|Win32
-		{E965881F-4419-4E4B-9A26-8BB50D8DFF02}.Release|x64.ActiveCfg = Release|x64
-		{E965881F-4419-4E4B-9A26-8BB50D8DFF02}.Release|x64.Build.0 = Release|x64
-		{E965881F-4419-4E4B-9A26-8BB50D8DFF02}.Release|x86.ActiveCfg = Release|Win32
-		{E965881F-4419-4E4B-9A26-8BB50D8DFF02}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {65FFBAF1-0043-4CB7-88AD-8E7302634677}
-	EndGlobalSection
-EndGlobal
+*  변수 : 변하는 수, 저장의 용도로 씀 (변수 안에 담을 것을 사용자가 정함)
+
+상수 : 변하지 않는 수
+
+​
+
+ex) int a;
+
+​
+
+char a = 127; //1byte //character == 문자
+
+short b; //2byte //작은 정수형
+
+int c; //4byte //int를 기준으로
+
+long d; //4byte or 8byte //큰 정수형
+
+​
+
+#include <stdio.h>가 있어야 printf를 사용할 수 있다
+
+​
+
+컴퓨터는
+
+0, 1 → 2진수 0(0) 1(1) 01(2) 11(3) 100(4)
+
+on, off
