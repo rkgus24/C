@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+typedef struct student {
+int num; // 학번
+char name[20]; // 이름
+int mic, lin, pro; // 각 과목의 점수
+int tot; // 총점
+double avg; // 평균
+char grade;
+} Student;
+
+void input_data(Student *pary); // 학생 데이터를 입력하는 함수
+void calc_data(Student *pary); // 학생 데이터를 계산하는 함수
+void print_data(Student *pary); // 학생 데이터를 출력하는 함수
+
+int main(void) {
+Student ary[5];
+input_data(ary);
+calc_data(ary);
+print_data(ary);
+return 0;
+}
+
+void input_data(Student *pary) {
+for (int i = 0; i < 1; i++) {
+printf("학생 %d의 데이터를 입력하세요 : ", i+1); // 1~5
+scanf("%d %s %d %d %d", &pary[i].num, pary[i].name, &pary[i].mic, &pary[i].lin, &pary[i].pro);
+} // 학번, 이름, 각 과목의 점수 입력
+}
+
+void calc_data(Student *pary) {
+for (int i = 0; i < 1; i++) { // 입력받은 5명의 학생 데이터
+pary[i].tot = pary[i].mic + pary[i].lin + pary[i].pro; // 총점을 구해서
+pary[i].avg = (double) pary[i].tot / 3; // 과목 수만큼 나눔
+
+if (pary[i].avg >= 90) {
+pary[i].grade = 'A';
+} 
+else if (pary[i].avg >= 80) {
+pary[i].grade = 'B';
+} 
+else if (pary[i].avg >= 70) {
+pary[i].grade = 'C';
+}
+else {
+pary[i].grade = 'F';
+}
+}
+}
+
+void print_data(Student *pary) {
+for (int i = 0; i < 1; i++) {
+printf("%d,%s,%d,%d,%d,%d,%.lf,%c\n", pary[i].num, pary[i].name, pary[i].mic, pary[i].lin, pary[i].pro, pary[i].tot, pary[i].avg, pary[i].grade);
+}
+}
